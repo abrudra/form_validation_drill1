@@ -17,12 +17,14 @@ closeDiv.id = "close-id"
 resultDiv.appendChild(closeDiv)
 let nameDiv = document.createElement("div");
 resultDiv.appendChild(nameDiv);
+nameDiv.classList.add("name-class")
 let dataDiv = document.createElement("div");
 resultDiv.appendChild(dataDiv);
 
+
 let emailDiv = document.createElement("div");
 dataDiv.appendChild(emailDiv);
-
+dataDiv.classList.add("margin-class")
 let whatLoveDiv = document.createElement("div");
 dataDiv.appendChild(whatLoveDiv);  
 
@@ -37,6 +39,7 @@ dataDiv.appendChild(radioDiv)
 
 let termDiv =document.createElement("div");
 dataDiv.appendChild(termDiv)
+termDiv.classList.add("underlineterm");
 
 formId.addEventListener("submit", validation);
 function validation(e) {

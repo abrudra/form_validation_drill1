@@ -12,6 +12,7 @@ background: rgb(115, 115, 238);
      background: antiquewhite;
     width: 30vw;
     margin: 8vh 30vw;
+    padding: 1rem;
 }
 
 .bg{
@@ -29,5 +30,56 @@ background: rgb(115, 115, 238);
     
 }
 
+.checkbox-css{
+        flex-direction: unset;
+        
+}
+.submit-class{
+        width: -webkit-fill-available;
+    height: 3rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 1rem;
+}
 
+#email,#whalove,#color,#range, #name{
+        height: 2rem;
+   
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
+#close-id{
+    margin-left: 25rem;
+    border: none;
+    color: grey;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#resultdiv{
+        display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.name-class{
+        font-size: inherit;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.margin-class{
+      display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.underlineterm{
+        text-decoration: underline;
+}
+
+.span-class{
+    color: red;
+    font-size: 1.1rem;
+}
