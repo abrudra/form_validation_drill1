@@ -1,0 +1,31 @@
+
+
+body{
+background: rgb(115, 115, 238);
+     font-size: 20px;
+     padding: 10px 20px;
+     width: 100vw;
+     height: 100vh;
+}
+
+.container{
+     background: antiquewhite;
+    width: 30vw;
+    margin: 8vh 30vw;
+}
+
+.bg{
+    background: antiquewhite;
+     display: flex; 
+    flex-direction: column;
+    padding: 4%;
+    
+}
+.resultdiv-class{
+    background: antiquewhite;
+    width: 50vw;
+    height: 50vh;
+    margin: auto auto;
+    
+}
+
