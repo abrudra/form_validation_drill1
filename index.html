@@ -1,70 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
-    <link rel="stylesheet" href="./stylesheet.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./stylesheet.css" />
+  </head>
+  <body>
     <div class="container">
-        <form id="form" method="get" action="/">
-            <div class="bg">
-                <label for ="name">Your name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" >
-            </div>
+      <form id="form" action="/">
+        <div class="bg">
+          <label for="name">Your name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+          <span id="namespan"></span>
+        </div>
 
-            <div class="bg" >
-                <label for="email">Your Email:</label>
-                <input type="text" for="email" id="email" placeholder="Enter yout email" >
-            </div>
-            <div class="bg">
-                <label for="whalove">What do you love?</label>
-                <select name="whalove" id="whalove">
-                    <option value="movies">Movies</option>
-                    <option value="travel">Traveling</option>
-                    <option value="play">Playing</option>
-                    <option value="read">Reading</option>
-                </select>
-                </div>
-            <div class="bg">
-                <label for="color">Choose a color:</label>
-                <input type="color" name="color" id="color">
-            </div>
-            <div class="bg">
-                <label for="range">Rate the movies inception out of 10</label>
-                <input type="range" name="range" id="range">
-            </div>
-            <div class="bg" id="radio" >
-                Book genre you love?
-                <div>
-                    <input type="radio" name="lovegenre" id="fiction" value="fiction" checked>
-                     <label for="fiction">Fiction</label>
-                </div>
-                <div>
-                    <input type="radio" name="lovegenre" id="nonfiction" value="nonfiction">
-                                        <label for="nonfiction">Non Fiction</label>
+        <div class="bg">
+          <label for="email">Your Email:</label>
+          <input
+            type="text"
+            for="email"
+            id="email"
+            placeholder="Enter yout email"
+          />
+          <span id="emailspan"></span>
+        </div>
+        <div class="bg">
+          <label for="whalove">What do you love?</label>
+          <select name="whalove" id="whalove">
+            <option value="movies">Movies</option>
+            <option value="travel">Traveling</option>
+            <option value="play">Playing</option>
+            <option value="read">Reading</option>
+          </select>
+        </div>
+        <div class="bg">
+          <label for="color">Choose a color:</label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <div class="bg">
+          <label for="range">Rate the movies inception out of 10</label>
+          <input type="range" name="range" id="range" />
+        </div>
+        <div class="bg" >
+          Book genre you love?
+          <div>
+            <input
+              type="radio"
+              name="lovegenre"
+              id="fiction"
+              value="fiction"
+            checked
+            />
+            <label for="fiction">Fiction</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="lovegenre"
+              id="nonfiction"
+              value="nonfiction"
+            />
+            <label for="nonfiction">Non Fiction</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="lovegenre"
+              id="adventure"
+              value="adventure"
+            />
+            <label for="adventure">Adventure</label>
+          </div>
+        </div>
+        <div class="bg">
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label for="checkbox">I Agree to Terms</label>
+          <span id="checkboxspan"></span>
+        </div>
 
-                </div>
-                <div>
-                    <input type="radio" name="lovegenre" id="adventure" value="adventure">
-                                        <label for="adventure">Adventure</label>
-
-                </div>
-            </div>
-            <div class="bg">
-                <input type="checkbox" name="checkbox" id="checkbox" >
-                <label for="checkbox">I Agree to Terms</label>
-            </div>
-
-            <button type="submit">Submit</button>
-            <div id="error"></div>
-
-        </form>
-        <div id="resultdiv"></div>
+        <button type="submit" name="submit">Submit</button>
+        <div id="error"></div>
+      </form>
+      <div id="resultdiv"></div>
     </div>
-    
-    <script src="./main.js" ></script>
-</body>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
